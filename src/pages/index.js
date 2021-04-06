@@ -2,33 +2,39 @@ import * as React from "react"
 //import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Link, graphql} from "gatsby";
+import { Link, graphql, useStaticQuery} from "gatsby";
+import StyledLandingWelcome from "../components/landingWelcome";
 
 
 
-const IndexPage = ({ data }) => (
+const IndexPage = () => {
+  /*const data = useStaticQuery(
+      graphql`
+      query {
+        placeholderImage: file(relativePath: { eq: "potion_bottle_v2.png" }) {
+          childImageSharp {
+             fluid(maxWidth: 1826, quality: 100) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    `
+  );
 
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to={"/protection/"}>Protection</Link>
-  </Layout>
-)
+    const imageData = data.placeholderImage.childImageSharp.fluid*/
+
+  return(
+          <Layout>
+            <SEO title="Home" />
+            <StyledLandingWelcome />
+            <Link to={"/protection/"}>Protection</Link>
+          </Layout>
+      )
+
+}
+
 
 export default IndexPage
 
-export const pageQuery = graphql`
-    query($slug: String!){
-        
-     crystal: contentfulCrystals(slug: {eq: $slug}) {
-    name
-    
-    chakra
-    zodiac
-  }
-    
-    }
-`
 

@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+}
+
+.landing {
+    margin: 0 auto;
+    height: 90vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.divStyle {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px;
+}

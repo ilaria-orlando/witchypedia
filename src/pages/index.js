@@ -1,10 +1,10 @@
 import * as React from "react"
 //import { StaticImage } from "gatsby-plugin-image"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 import { Link, graphql, useStaticQuery} from "gatsby";
 import BackgroundImage from "gatsby-background-image";
-import Sparkle from 'react-sparkle'
+import Sparkle from 'react-sparkle';
 
 
 

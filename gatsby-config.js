@@ -1,6 +1,9 @@
-require('dotenv').config({
-    path: `.env.${process.env.NODE_ENV}`,
-});
+// require("dotenv").config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// });
+// import dotenv from 'dotenv';
+
+// dotenv.config();
 
 module.exports = {
   siteMetadata: {
@@ -45,9 +48,9 @@ module.exports = {
       {
           resolve: `gatsby-source-contentful`,
           options: {
-              spaceId: `16qq63sn1xyf`,
+              spaceId: process.env.SPACE_ID,
               // Learn about environment variables: https://gatsby.dev/env-vars
-              accessToken: `pLnC3_i6eRUM__hrii1428lLQVRJlyVOP3iB0tlqHXs`,
+              accessToken: process.env.ACCESS_TOKEN,
           },
       },
 

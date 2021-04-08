@@ -1,10 +1,10 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+// import Navbar from './components/Navbar';
 
 const Header = ({ siteTitle }) => (
-  <header
-  >
+  <header>
     <div
       style={{
         margin: `0 auto`,

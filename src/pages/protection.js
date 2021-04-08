@@ -24,16 +24,16 @@ const Protection = ({ data: { allContentfulCrystals : data} }) => {
 export default Protection
 
 export const pageQuery = graphql`
-    query{
+    query {
        allContentfulCrystals (filter: {tags: {eq: "protection"}}) {
-       edges {
-          node {
-            chakra
-            zodiac
-            name
-            slug
-    
-          }
+        edges {
+            node {
+                chakra
+                zodiac
+                name
+                slug
+        
+            }
         }
         }
     

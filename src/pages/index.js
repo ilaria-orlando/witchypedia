@@ -44,6 +44,7 @@ const IndexPage = () => {
                 <h2>Landing page</h2>
             </div>
             <Link to={"/protection/"}>Protection</Link>
+            <Link to={"/book-of-shadows/"}>Book of Shadows</Link>
           </Layout>
       </BackgroundImage>
       )

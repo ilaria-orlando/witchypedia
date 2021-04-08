@@ -30,6 +30,7 @@
     "gatsby-plugin-styled-components": "^4.2.0",
     "gatsby-source-contentful": "^5.1.2",
     "gatsby-source-filesystem": "^3.1.0",
+    "gatsby-source-mongodb": "^3.2.0",
     "gatsby-transformer-cloudinary": "^2.2.4",
     "gatsby-transformer-remark": "^3.2.0",
     "gatsby-transformer-sharp": "^3.1.0",

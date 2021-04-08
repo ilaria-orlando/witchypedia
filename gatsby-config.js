@@ -1,9 +1,6 @@
-// require("dotenv").config({
-//   path: `.env.${process.env.NODE_ENV}`,
-// });
-// import dotenv from 'dotenv';
-
-// dotenv.config();
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 module.exports = {
   siteMetadata: {

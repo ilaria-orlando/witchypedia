@@ -1,3 +1,5 @@
+
+
 body{
     margin: 0;
 }
@@ -13,6 +15,7 @@ body{
     margin: 0 auto;
     max-width: 800px;
     padding: 20px;
+    font-family: 'Dosis', sans-serif;
 }
 
 .rounded{
@@ -43,7 +46,38 @@ body{
 }
 
 p {
-    padding: 10px;
+    padding: 10px 15px 10px 15px;
+    font-size: 18px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.name{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.flexLines{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.centerImage{
+    margin: 0 auto;
+}
+
+.menuFlex{
+    padding-top: 15px;
+}
+
+.menuItem{
+    color: #a0d6b4;
+    padding-right: 10px;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
 }
 
 

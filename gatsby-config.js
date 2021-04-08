@@ -4,11 +4,24 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Witchypedia`,
+    description: `Search and find all the info you need to create your spells. Take notes in your own virtual book of shadows`,
+    author: `Ilaria & Stephanie`,
   },
   plugins: [
+
+      {
+          resolve: `gatsby-plugin-google-fonts-v2`,
+          options: {
+              fonts: [
+                  {
+                      family: 'Roboto Slab',
+                      variable: true,
+                      weights: ['200..900']
+                  }
+              ]
+          }
+      },
 
       {
           resolve: `gatsby-source-filesystem`,
@@ -54,6 +67,18 @@ module.exports = {
       `@chakra-ui/gatsby-plugin`,
 
     `gatsby-plugin-gatsby-cloud`,
+
+
+
+    {
+        resolve: "gatsby-plugin-react-svg",
+        options: {
+            rule: {
+                include: /svg/
+            }
+        }
+    }
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

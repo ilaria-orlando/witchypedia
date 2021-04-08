@@ -7,13 +7,15 @@ const Protection = ({ data: { allContentfulCrystals : data} }) => {
 
     return(
         <Layout>
-            {data.edges.map(({ node }) => {
-                return (
-                    <li key={node.slug}>
-                        <Link to={`/crystals/${node.slug}`}>{node.name}</Link>
-                    </li>
-                )
-            })}
+            <div className="divStyle">
+                {data.edges.map(({ node }) => {
+                    return (
+                        <li key={node.slug}>
+                            <Link to={`/crystals/${node.slug}`}>{node.name}</Link>
+                        </li>
+                    )
+                })}
+            </div>
         </Layout>
     )
 

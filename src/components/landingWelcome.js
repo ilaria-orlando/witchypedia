@@ -31,8 +31,13 @@ const LandingWelcome = () => {
                 Tag="section"
                 fluid={imageData}
             >
-                <div className="divStyle">
-                    <h2>Wicthypedia test test test</h2>
+                <div className="divStyle landingflex">
+                    <div>
+                        <h2>Witchypedia test test test</h2>
+                    </div>
+                    <div>
+                        <p></p>
+                    </div>
                 </div>
             </BackgroundImage>
 
@@ -43,7 +48,7 @@ const LandingWelcome = () => {
 const StyledLandingWelcome = styled(LandingWelcome)`
   background-position: right bottom;
   background-repeat: no-repeat;
-  margin: 0;
+  margin-top: 0;
 `
 
 export default StyledLandingWelcome

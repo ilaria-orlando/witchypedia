@@ -4,13 +4,46 @@ body{
 
 .landing {
     margin: 0 auto;
-    height: 90vh;
+    height: 99vh;
     background-position: center bottom;
     background-repeat: no-repeat;
 }
 
 .divStyle {
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 800px;
     padding: 20px;
 }
+
+.rounded{
+    border-radius: 20px;
+    margin: 0 auto;
+    -webkit-box-shadow: 5px 10px 24px -4px rgba(0,0,0,0.23);
+    -moz-box-shadow: 5px 10px 24px -4px rgba(0,0,0,0.23);
+    box-shadow: 5px 10px 24px -4px rgba(0,0,0,0.23);
+}
+
+.description {
+    margin-top: -35px;
+    text-align: center;
+    width: inherit;
+    border-radius: 20px;
+    background-color: #726a95;
+    padding: 50px 20px 20px 20px;
+    -webkit-box-shadow: 5px 10px 24px -4px rgba(0,0,0,0.23);
+    -moz-box-shadow: 5px 10px 24px -4px rgba(0,0,0,0.23);
+    box-shadow: 5px 10px 24px -4px rgba(0,0,0,0.23);
+}
+
+.crystalsummery{
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+}
+
+p {
+    padding: 10px;
+}
+
+

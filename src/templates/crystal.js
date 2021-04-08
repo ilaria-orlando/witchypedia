@@ -11,14 +11,18 @@ const Crystal = (props) => {
 
     return(
         <Layout>
-            <div>
-                <h1>{props.data.crystal.name}</h1>
-                <GatsbyImage
-                    image={image} alt={props.data.crystal.name}
-                />
-                <p>{text}</p>
-                <p>Associated chakra: {props.data.crystal.chakra}</p>
-                <p>Associated zodiac: {props.data.crystal.zodiac}</p>
+            <div className="divStyle">
+                <div className="crystalsummery">
+                    <GatsbyImage className="rounded"
+                                 image={image} alt={props.data.crystal.name}
+                    />
+                    <div className="description">
+                        <h2>{props.data.crystal.name}</h2>
+                        <p>{text}</p>
+                        <p>Associated chakra: {props.data.crystal.chakra}</p>
+                        <p>Associated zodiac: {props.data.crystal.zodiac}</p>
+                    </div>
+                </div>
             </div>
         </Layout>
     )

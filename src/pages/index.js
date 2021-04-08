@@ -3,12 +3,13 @@ import * as React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link, graphql, useStaticQuery} from "gatsby";
-import StyledLandingWelcome from "../components/landingWelcome";
+import BackgroundImage from "gatsby-background-image";
+import Sparkle from 'react-sparkle'
 
 
 
 const IndexPage = () => {
-  /*const data = useStaticQuery(
+  const data = useStaticQuery(
       graphql`
       query {
         placeholderImage: file(relativePath: { eq: "potion_bottle_v2.png" }) {
@@ -22,14 +23,29 @@ const IndexPage = () => {
     `
   );
 
-    const imageData = data.placeholderImage.childImageSharp.fluid*/
+    const imageData = data.placeholderImage.childImageSharp.fluid
 
   return(
+      <BackgroundImage
+          className="landing"
+          Tag="section"
+          fluid={imageData}
+      >
           <Layout>
             <SEO title="Home" />
-            <StyledLandingWelcome />
+            <div className="divStyle" style={{ position: 'relative', height:'80vh'}}>
+                <Sparkle
+                    minSize={3}
+                    maxSize={5}
+                    count={50}
+                    fadeOutSpeed={1}
+                    flickerSpeed={'slowest'}
+                />
+                <h2>Landing page</h2>
+            </div>
             <Link to={"/protection/"}>Protection</Link>
           </Layout>
+      </BackgroundImage>
       )
 
 }

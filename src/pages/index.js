@@ -1,8 +1,7 @@
 import * as React from "react"
-//import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Link, graphql, useStaticQuery} from "gatsby";
+import { graphql, useStaticQuery} from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 import Sparkle from 'react-sparkle'
 
@@ -43,7 +42,6 @@ const IndexPage = () => {
                 />
                 <h2>Landing page</h2>
             </div>
-            <Link to={"/protection/"}>Protection</Link>
           </Layout>
       </BackgroundImage>
       )

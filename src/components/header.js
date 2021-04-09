@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
         <div  className="flexLines">
             <Right />
             <Link to={"/"}><span className="menuItem">About</span></Link>
-            <Link to={"/"}><span className="menuItem">Crystals</span></Link>
+            <Link to={"/crystals"}><span className="menuItem">Crystals</span></Link>
             <Link to={"/"}><span className="menuItem">Herbs</span></Link>
             <Left />
         </div>

@@ -1,49 +1,4 @@
-import React, { useState } from 'react';
-import { withRouter } from "react-router-dom";
-import { useMutation } from "@apollo/react-hooks";
-import gql from "graphql-tag";
-import { notify } from 'react-notify-toast';
-
-const NEW_NOTE = gql`
-    mutation createNote($title: String! $content: String!) {
-        createNote( input: {title: $title, content: $content}) {
-            _id
-            title
-            content
-            date
-        }
-    }
-`;
-const NOTES_QUERY = gql`
-    {
-        allNotes {
-            title
-            content
-            _id
-            date
-        }
-    }
-`;
-const NewNote = withRouter(({ history }) => {
-    const [title, setTitle] = useState("");
-    const [content, setContent] = useState("");
-
-    const [createNote] = useMutation(NEW_NOTE, {
-        update(
-            cache,
-            {
-                data: { createNote }
-            }
-        ) {
-            const { allNotes } = cache.readQuery({ query: NOTES_QUERY });
-
-            cache.writeQuery({
-                query: NOTES_QUERY,
-                data: { allNotes: allNotes.concat([createNote]) }
-            });
-        }
-    });
-
+const newNote = () => {
     return (
         <div className="container m-t-20">
             <h1 className="page-title">New Note</h1>
@@ -106,6 +61,4 @@ const NewNote = withRouter(({ history }) => {
             </div>
         </div>
     );
-});
-
-export default NewNote;
+}

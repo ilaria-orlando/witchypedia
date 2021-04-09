@@ -17,10 +17,10 @@ const Crystal = (props) => {
                                  image={image} alt={props.data.crystal.name}
                     />
                     <div className="description">
-                        <h2>{props.data.crystal.name}</h2>
+                        <h2 className="name">{props.data.crystal.name}</h2>
                         <p>{text}</p>
-                        <p>Associated chakra: {props.data.crystal.chakra}</p>
-                        <p>Associated zodiac: {props.data.crystal.zodiac}</p>
+                        <p>Associated chakra:<span className="bold">{props.data.crystal.chakra}</span></p>
+                        <p>Associated zodiac: <span className="bold">{props.data.crystal.zodiac}</span></p>
                     </div>
                 </div>
             </div>

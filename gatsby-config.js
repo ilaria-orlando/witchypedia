@@ -10,6 +10,18 @@ module.exports = {
     },
     plugins: [
         {
+            resolve: `gatsby-plugin-google-fonts-v2`,
+            options: {
+                fonts: [
+                    {
+                        family: 'Roboto Slab',
+                        variable: true,
+                        weights: ['200..900']
+                    }
+                ]
+            }
+        },
+        {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `images`,
@@ -39,14 +51,25 @@ module.exports = {
                 icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
             },
         },
+
         {
             resolve: `gatsby-source-contentful`,
             options: {
-                spaceId: process.env.SPACE_ID,
+                spaceId: `16qq63sn1xyf`,
                 // Learn about environment variables: https://gatsby.dev/env-vars
-                accessToken: process.env.ACCESS_TOKEN,
+                accessToken: `pLnC3_i6eRUM__hrii1428lLQVRJlyVOP3iB0tlqHXs`,
             },
         },
+        `@chakra-ui/gatsby-plugin`,
+        `gatsby-plugin-gatsby-cloud`,
+        {
+            resolve: "gatsby-plugin-react-svg",
+            options: {
+                rule: {
+                    include: /svg/
+                }
+            }
+        }
         {
             // The name of the plugin
             resolve: 'gatsby-source-mongodb',
@@ -70,8 +93,6 @@ module.exports = {
                 }
             }
         },
-        `@chakra-ui/gatsby-plugin`,
-        `gatsby-plugin-gatsby-cloud`,
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
         // `gatsby-plugin-offline`,

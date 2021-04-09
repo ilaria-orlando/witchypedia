@@ -3,26 +3,26 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 // import Navbar from './components/Navbar';
 
+import Logo from "../images/svg/witchypedia_logo_green.svg"
+import Right from "../images/svg/line_right.svg"
+import Left from "../images/svg/line_left.svg"
+
+
 const Header = ({ siteTitle }) => (
   <header>
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: 10,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          Witchypedia
-        </Link>
-      </h1>
+    <div className="menuFlex">
+        <div>
+            <Link to="/">
+                <Logo className="centerImage" />
+            </Link>
+        </div>
+        <div  className="flexLines">
+            <Right />
+            <Link to={"/"}><span className="menuItem">About</span></Link>
+            <Link to={"/crystals"}><span className="menuItem">Crystals</span></Link>
+            <Link to={"/"}><span className="menuItem">Herbs</span></Link>
+            <Left />
+        </div>
     </div>
   </header>
 )

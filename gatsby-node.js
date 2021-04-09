@@ -9,31 +9,6 @@ const path = require("path");
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions;
 
-    /*const pagesByTags = await graphql(
-        `
-          {
-            allContentfulCrystals {
-              edges {
-                node {
-                  name
-                  slug
-                  tags
-                }
-              }
-            }
-          }
-        `
-    )
-    pagesByTags.data.allContentfulCrystals.edges.forEach(edge => {
-        createPage({
-            path: `/${edge.node.tags}`,
-            component: path.resolve("./src/templates/tagfilter.js"),
-            context: {
-                tags: edge.node.tags,
-            }
-        })
-    })*/
-
     const crystals = await graphql(
         `
           {

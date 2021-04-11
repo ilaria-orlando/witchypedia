@@ -19,7 +19,7 @@ const Background = ({children}) => {
       }
     `)
 
-    const imageData = image.desktop.childImageSharp.fluid
+    const imageData = image.desktop.childImageSharp.fixed
 
     return (
         <BackgroundImage fluid={imageData} className="background">

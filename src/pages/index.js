@@ -1,12 +1,14 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { graphql, useStaticQuery} from "gatsby"
+import {graphql, Link, useStaticQuery} from "gatsby"
 
 
 import BackgroundImage from "gatsby-background-image"
 import Sparkle from 'react-sparkle'
+import Typewriter from 'typewriter-effect';
 import Background from "../components/background";
+import Gem from "../images/svg/gem.svg";
 
 
 
@@ -55,7 +57,18 @@ const IndexPage = () => {
                         />
                         <div className="landingDiv">
                             <div>
-                                <h1 className="landingTitle">Create your magic</h1>
+                                <div className="landingTitle">
+                                    <Typewriter
+                                        onInit={(typewriter) => {
+                                            typewriter.typeString('Create magic')
+                                                .pauseFor(2500)
+                                                .deleteChars(5)
+                                                .typeString('your magic')
+                                                .start();
+                                        }}
+
+                                    />
+                                </div>
                                 <h2 className="landingSubt">Welcome to Witchypedia, your source for everything spell related</h2>
                             </div>
                             <div className="textBox">
@@ -64,6 +77,9 @@ const IndexPage = () => {
                                     You can even create you own online grimoire so you never lose your notes again.
                                 </p>
                             </div>
+                                <div className="buttonFlex">
+                                    <Link to={"/"}><div className="tagLink"><Gem /><p>Check it out</p> </div></Link>
+                                </div>
                         </div>
 
                     </div>

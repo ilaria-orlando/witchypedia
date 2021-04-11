@@ -15,11 +15,11 @@ const Crystal = (props) => {
             <Layout>
                 <div className="divStyle">
                     <div className="crystalsummery">
+                        <h2 className="name">{props.data.crystal.name}</h2>
                         <GatsbyImage className="rounded"
                                      image={image} alt={props.data.crystal.name}
                         />
                         <div className="description">
-                            <h2 className="name">{props.data.crystal.name}</h2>
                             <p>{text}</p>
                             <p>Associated chakra:<span className="bold">{props.data.crystal.chakra}</span></p>
                             <p>Associated zodiac: <span className="bold">{props.data.crystal.zodiac}</span></p>

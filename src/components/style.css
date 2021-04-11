@@ -14,7 +14,7 @@ body{
 
 .landing {
     margin: 0 auto;
-    height: 100vh;
+    height: 99vh;
     background-position: center bottom;
     background-repeat: no-repeat;
 }
@@ -40,15 +40,22 @@ body{
 
 .landingTitle{
     font-size: 35px;
-    font-weight: bold;
     color: #719fb0;
+    font-family:"Berkshire Swash";
 }
 .landingSubt{
     font-size: 20px;
     color: #719fb0;
+    font-family:"Berkshire Swash";
 }
 
 .textBox{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.buttonFlex{
     display: flex;
     justify-content: flex-end;
 }
@@ -72,6 +79,7 @@ body{
     width: inherit;
     border-radius: 20px;
     background-color: #726a95;
+    color: #a0c1b8;
     padding: 50px 20px 20px 20px;
     -webkit-box-shadow: 5px 10px 24px -4px rgba(0,0,0,0.23);
     -moz-box-shadow: 5px 10px 24px -4px rgba(0,0,0,0.23);
@@ -95,8 +103,11 @@ p {
 }
 
 .name{
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 50px;
+    font-family:"Berkshire Swash";
+    text-align: center;
+    color: #a0c1b8;
+    margin-bottom: 20px;
 }
 
 .flexLines{
@@ -127,8 +138,8 @@ p {
     height: 50px;
     background-color: #a0c1b8;
     border-radius: 20px;
+    padding-top: 3px;
     margin: 7px;
-    padding-top: 5px;
     color: #726a95;
     font-weight: bold;
     font-size: 18px;
@@ -157,13 +168,14 @@ p {
     align-items: center;
     align-content: center;
     margin: 25px 0 0 -35px;
+    font-family:"Berkshire Swash";
 }
 
 .titleH2{
     color: #719fb0;
-    font-weight: bold;
     font-size: 50px;
     margin: 40px 0 0 25px;
+    font-family:"Berkshire Swash";
 }
 
 .purple {
@@ -190,6 +202,10 @@ p {
     .titleH2{
         font-size: 32px;
         margin: 20px 0 0 15px;
+    }
+
+    .name{
+        font-size: 32px;
     }
 
     .detailSVG{

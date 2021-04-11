@@ -14,8 +14,10 @@
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
     "@fontsource/abel": "^4.2.2",
+    "@fontsource/berkshire-swash": "^4.2.2",
     "@fontsource/dosis": "^4.2.2",
     "@fontsource/poiret-one": "^4.2.2",
+    "@fontsource/shadows-into-light": "^4.2.2",
     "babel-plugin-styled-components": "^1.12.0",
     "bluebird": "^3.7.2",
     "contentful": "^8.2.0",
@@ -47,6 +49,7 @@
     "react-helmet": "^6.1.0",
     "react-sparkle": "^1.0.8",
     "styled-components": "^5.2.3",
+    "typewriter-effect": "^2.17.0",
     "use-cloudinary": "^4.1.0"
   },
   "devDependencies": {

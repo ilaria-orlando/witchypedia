@@ -47,6 +47,16 @@ module.exports = {
                 accessToken: process.env.ACCESS_TOKEN,
             },
         },
+        `@chakra-ui/gatsby-plugin`,
+        `gatsby-plugin-gatsby-cloud`,
+        {
+            resolve: "gatsby-plugin-react-svg",
+            options: {
+                rule: {
+                    include: /svg/
+                }
+            }
+        },
         {
             // The name of the plugin
             resolve: 'gatsby-source-mongodb',
@@ -70,8 +80,14 @@ module.exports = {
                 }
             }
         },
-        `@chakra-ui/gatsby-plugin`,
-        `gatsby-plugin-gatsby-cloud`,
+        {
+            resolve: 'gatsby-plugin-apollo',
+            options: {
+              uri: 'https://webhooks.mongodb-realm.com/api/client/v2.0/app/witchypedia-wigwf/service/notes/incoming_webhook/add'
+            }
+        },
+        'gatsby-theme-apollo',
+        'realm-web',
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
         // `gatsby-plugin-offline`,

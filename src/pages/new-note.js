@@ -1,4 +1,46 @@
+import React, { useState } from 'react';
+
+
+const NEW_NOTE = gql`
+    mutation createNote($title: String! $content: String!) {
+        createNote( input: {title: $title, content: $content}) {
+            _id
+            title
+            content
+            date
+        }
+    }
+`;
+const NOTES_QUERY = gql`
+    {
+        allNotes {
+            title
+            content
+            _id
+            date
+        }
+    }
+`;
 const newNote = () => {
+    const [title, setTitle] = useState("");
+    const [content, setContent] = useState("");
+
+    const [createNote] = useMutation(NEW_NOTE, {
+        update(
+            cache,
+            {
+                data: { createNote }
+            }
+        ) {
+            const { allNotes } = cache.readQuery({ query: NOTES_QUERY });
+
+            cache.writeQuery({
+                query: NOTES_QUERY,
+                data: { allNotes: allNotes.concat([createNote]) }
+            });
+        }
+    });
+
     return (
         <div className="container m-t-20">
             <h1 className="page-title">New Note</h1>
@@ -62,3 +104,5 @@ const newNote = () => {
         </div>
     );
 }
+
+export default newNote;

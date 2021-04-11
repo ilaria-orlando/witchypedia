@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Crystal from "../images/svg/crystal.svg"
 import Eye from "../images/svg/eye_small.svg"
 import Moon from "../images/svg/moon_small.svg"
+import Gem from "../images/svg/gem.svg"
 
 const AllCrystals = () => {
 
@@ -28,6 +29,7 @@ const AllCrystals = () => {
                     <Link to={"/money/"}><div className="tagLink"><p>Money </p></div></Link>
                     <Link to={"/clarity/"}><div className="tagLink"><Eye /><p>Clarity</p> </div></Link>
                     <Link to={"/love/"}><div className="tagLink"><p>Love</p> </div></Link>
+                    <Link to={"/"}><div className="tagLink"><Gem /><p>All</p> </div></Link>
                 </div>
 
             </div>

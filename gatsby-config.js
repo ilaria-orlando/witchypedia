@@ -46,6 +46,7 @@ module.exports = {
                 short_name: `starter`,
                 start_url: `/`,
                 background_color: `#663399`,
+
                 theme_color: `#663399`,
                 display: `minimal-ui`,
                 icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
@@ -55,10 +56,33 @@ module.exports = {
         {
             resolve: `gatsby-source-contentful`,
             options: {
-                spaceId: `16qq63sn1xyf`,
+                spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
                 // Learn about environment variables: https://gatsby.dev/env-vars
-                accessToken: `pLnC3_i6eRUM__hrii1428lLQVRJlyVOP3iB0tlqHXs`,
+                accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
             },
+        },
+        {
+            // The name of the plugin
+            resolve: 'gatsby-source-mongodb',
+            options: {
+                // Name of the database and collection where are books reside
+                dbName: process.env.GATSBY_ATLAS_DB_NAME,
+                collection: process.env.GATSBY_ATLAS_COLLECTION,
+                server: {
+                    address: process.env.GATSBY_ATLAS_ADDRESS,
+                    port: process.env.GATSBY_ATLAS_PORT
+                },
+                auth: {
+                    user: process.env.GATSBY_ATLAS_USER,
+                    password: process.env.GATSBY_ATLAS_PASSWORD
+                },
+                extraParams: {
+                    replicaSet: 'Cluster0-shard-0',
+                    ssl: true,
+                    authSource: 'admin',
+                    retryWrites: true
+                }
+            }
         },
         `@chakra-ui/gatsby-plugin`,
         `gatsby-plugin-gatsby-cloud`,
@@ -70,29 +94,7 @@ module.exports = {
                 }
             }
         }
-        {
-            // The name of the plugin
-            resolve: 'gatsby-source-mongodb',
-            options: {
-                // Name of the database and collection where are books reside
-                dbName: process.env.ATLAS_DB_NAME,
-                collection: process.env.ATLAS_COLLECTION,
-                server: {
-                    address: process.env.ATLAS_ADDRESS,
-                    port: process.env.ATLAS_PORT
-                },
-                auth: {
-                    user: process.env.ATLAS_USER,
-                    password: process.env.ATLAS_PASSWORD
-                },
-                extraParams: {
-                    replicaSet: 'Cluster0-shard-0',
-                    ssl: true,
-                    authSource: 'admin',
-                    retryWrites: true
-                }
-            }
-        },
+
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
         // `gatsby-plugin-offline`,

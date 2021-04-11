@@ -8,6 +8,7 @@ import Sparkle from 'react-sparkle'
 
 
 
+
 const IndexPage = () => {
   const data = useStaticQuery(
       graphql`
@@ -26,25 +27,25 @@ const IndexPage = () => {
     const imageData = data.placeholderImage.childImageSharp.fluid
 
   return(
-      <BackgroundImage
-          className="landing"
-          Tag="section"
-          fluid={imageData}
-      >
-          <Layout>
-            <SEO title="Home" />
-            <div className="divStyle" style={{ position: 'relative', height:'80vh'}}>
-                <Sparkle
-                    minSize={3}
-                    maxSize={5}
-                    count={50}
-                    fadeOutSpeed={1}
-                    flickerSpeed={'slowest'}
-                />
-                <h2>Landing page</h2>
-            </div>
-          </Layout>
-      </BackgroundImage>
+          <BackgroundImage
+              className="landing"
+              Tag="section"
+              fluid={imageData}
+          >
+              <Layout>
+                <SEO title="Home" />
+                <div className="divStyle" style={{ position: 'relative', height:'80vh'}}>
+                    <Sparkle
+                        minSize={3}
+                        maxSize={5}
+                        count={50}
+                        fadeOutSpeed={1}
+                        flickerSpeed={'slowest'}
+                    />
+                    <h2>Landing page</h2>
+                </div>
+              </Layout>
+          </BackgroundImage>
       )
 
 }

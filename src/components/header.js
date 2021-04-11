@@ -21,6 +21,7 @@ const Header = ({ siteTitle }) => (
             <Link to={"/"}><span className="menuItem">About</span></Link>
             <Link to={"/crystals"}><span className="menuItem">Crystals</span></Link>
             <Link to={"/"}><span className="menuItem">Herbs</span></Link>
+            <Link to={"/"}><span className="menuItem">Grimoire</span></Link>
             <Left />
         </div>
     </div>

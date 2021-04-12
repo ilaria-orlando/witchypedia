@@ -5,6 +5,7 @@ import Background from "../components/background";
 
 import editIcon from '../images/edit.png';
 import deleteIcon from '../images/delete.png';
+import addIcon from '../images/add.png';
 
 
 const AllNotes = (props) => {
@@ -27,6 +28,37 @@ const AllNotes = (props) => {
                                 <Link to={'/deleteNote/'}> <button type='button'> <img className="grimoireButton" src={deleteIcon} alt="delete"/></button></Link>
                         </div>
                     )}
+                    <div className="container m-t-20">
+                        <div className="newnote-page m-t-20">
+                            <form>
+                                <div className="field">
+                                    <div className="control">
+                                        <input
+                                            className="input"
+                                            name="title"
+                                            type="text"
+                                            placeholder="Note Title"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="field">
+                                    <div className="control">
+                                        <textarea
+                                            className="textarea"
+                                            name="content"
+                                            rows="10"
+                                            placeholder="Note Content here..."
+                                        ></textarea>
+                                    </div>
+                                </div>
+                                <div className="field">
+                                    <div className="control">
+                                        <button className="button is-link"><img className="grimoireButton" src={addIcon} alt="add"/></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </Layout>
         </Background>

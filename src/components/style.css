@@ -228,4 +228,27 @@ p {
 .grimoireButton {
     width: auto;
     height: 20px;
+    margin-left: 10px;
+}
+
+.grimoire{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+.note{
+    margin: 20px 10px 10px 10px;
+    text-align: center;
+    width: 85%;
+    border-radius: 22px;
+    background-color: #726a95;
+    color: #a0c1b8;
+    font-size: 24px;
+    padding: 50px 20px 30px 20px;
+    -webkit-box-shadow: 5px 10px 24px -4px rgba(0,0,0,0.23);
+    -moz-box-shadow: 5px 10px 24px -4px rgba(0,0,0,0.23);
+    box-shadow: 5px 10px 24px -4px rgba(0,0,0,0.23);
 }

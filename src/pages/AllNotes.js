@@ -17,16 +17,19 @@ const AllNotes = (props) => {
         <Background>
             <Layout>
                 <div className="divStyle">
-                    {notes.map(note =>
-                        <div className="note">
+                    <div className="grimoire">
+                        <h1 className="name">Grimoire</h1>
+                        {notes.map(note =>
+                            <div className="note">
                                 {/* <img src={note.node.thumbnailUrl} /> */}
                                 <h2>{note.title}</h2>
                                 <p>{note.content}</p>
                                 {/* <h6>{note.date}</h6> */}
                                 <Link to={'/editNote/'+note.id}> <button type='button'> <img className="grimoireButton" src={editIcon} alt="edit"/></button></Link>
                                 <Link to={'/deleteNote/'}> <button type='button'> <img className="grimoireButton" src={deleteIcon} alt="delete"/></button></Link>
-                        </div>
-                    )}
+                            </div>
+                        )}
+                    </div>
                 </div>
             </Layout>
         </Background>

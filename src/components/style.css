@@ -224,4 +224,8 @@ p {
 
 }
 
-
+/* Grimoire */
+.grimoireButton {
+    width: auto;
+    height: 20px;
+}

@@ -3,6 +3,9 @@ import {graphql, Link} from 'gatsby';
 import Layout from "../components/layout"
 import Background from "../components/background";
 
+import editIcon from '../images/edit.png';
+import deleteIcon from '../images/delete.png';
+
 
 const AllNotes = (props) => {
     console.log(props);
@@ -20,8 +23,8 @@ const AllNotes = (props) => {
                                 <h2>{note.title}</h2>
                                 <p>{note.content}</p>
                                 {/* <h6>{note.date}</h6> */}
-                                <Link to={'/editNote/'+note.id}> <i></i> </Link>
-                                <Link to={'/deleteNote/'}>Delete</Link>
+                                <Link to={'/editNote/'+note.id}> <button type='button'> <img className="grimoireButton" src={editIcon} alt="edit"/></button></Link>
+                                <Link to={'/deleteNote/'}> <button type='button'> <img className="grimoireButton" src={deleteIcon} alt="delete"/></button></Link>
                         </div>
                     )}
                 </div>

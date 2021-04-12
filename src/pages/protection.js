@@ -19,9 +19,9 @@ const Protection = ({ data: { allContentfulCrystals : data} }) => {
                             <h2 className="titleH2 purpleColor">Protection</h2>
                         </div>
                         <div className="description green">
-                            <p>Do you need some help trusting your intuition?
-                                Are you looking for a crystal that stimulates you cognitively? Do you need some help making decisions? Or maybe you want something
-                                that will help you concentration. Here you can find all the crystals and stones associated with clarity. </p>
+                            <p>Sometimes you need to protect yourself from the low vibration energy of others. You might find yourself in a hostile environment or you
+                            expect yourself to be in a risky situation that can't be avoided. It's important to protect your own flame, some people are just out to get you.
+                            This is our collection of crystals for protection.git</p>
                         </div>
                     </div>
                     <div className="tags">

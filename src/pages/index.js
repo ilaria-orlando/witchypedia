@@ -51,7 +51,7 @@ const IndexPage = () => {
                         <Sparkle
                             minSize={3}
                             maxSize={5}
-                            count={50}
+                            count={60}
                             fadeOutSpeed={1}
                             flickerSpeed={'slowest'}
                         />

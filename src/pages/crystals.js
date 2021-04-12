@@ -8,6 +8,7 @@ import Eye from "../images/svg/eye_small.svg"
 import Moon from "../images/svg/moon_small.svg"
 import Heart from "../images/svg/heart_small.svg"
 import Gem from "../images/svg/gem.svg"
+import Money from  "../images/svg/money_small.svg"
 
 const AllCrystals = () => {
 
@@ -29,7 +30,7 @@ const AllCrystals = () => {
                     </div>
                     <div className="tags">
                         <Link to={"/protection/"}><div className="tagLink"><Moon /><p>Protection</p> </div></Link>
-                        <Link to={"/money/"}><div className="tagLink"><p>Money </p></div></Link>
+                        <Link to={"/money/"}><div className="tagLink"><Money /><p>Money </p></div></Link>
                         <Link to={"/clarity/"}><div className="tagLink"><Eye /><p>Clarity</p> </div></Link>
                         <Link to={"/love/"}><div className="tagLink"> <Heart /><p>Love</p> </div></Link>
                         <Link to={"/"}><div className="tagLink"><Gem /><p>All</p> </div></Link>

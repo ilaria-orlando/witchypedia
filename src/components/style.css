@@ -42,6 +42,7 @@ body{
     font-size: 35px;
     color: #719fb0;
     font-family:"Berkshire Swash";
+    margin-top: 30px;
 }
 .landingSubt{
     font-size: 20px;
@@ -52,7 +53,7 @@ body{
 .textBox{
     display: flex;
     justify-content: flex-end;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .buttonFlex{

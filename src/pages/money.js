@@ -1,22 +1,41 @@
 import React from 'react'
 import {graphql, Link} from 'gatsby'
 import Layout from "../components/layout"
+import Background from "../components/background";
+
+import Moneybag from "../images/svg/money_big.svg"
+import Gem from "../images/svg/gem.svg";
 
 
 const Money = ({ data: { allContentfulCrystals : data} }) => {
 
     return(
-        <Layout>
-            <div className="divStyle">
-                {data.edges.map(({ node }) => {
-                    return (
-                        <li key={node.slug}>
-                            <Link to={`/crystals/${node.slug}`}>{node.name}</Link>
-                        </li>
-                    )
-                })}
-            </div>
-        </Layout>
+        <Background>
+            <Layout>
+                <div className="divStyle">
+                    <div className="crystalPage">
+                        <div className="title">
+                            <Moneybag className="detailSVG"/>
+                            <h2 className="titleH2 purpleColor">Money</h2>
+                        </div>
+                        <div className="description green">
+                            <p>Money cannot make you happy, but it does help. Do you want to attract some quick cash? Or need some support in making financial decisions?
+                            Sometimes we just need a little help in finding a fulfilling job. This section covers all the crystals to jumpstart you financially. Click and find out!</p>
+                        </div>
+                    </div>
+                    <div className="tags">
+                        {data.edges.map(({ node }) => {
+                            return (
+                                <div key={node.slug}>
+                                    <Link to={`/crystals/${node.slug}`}><div className="tagLink purple"><Gem /><p>{node.name}</p></div></Link>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
+            </Layout>
+        </Background>
+
     )
 
 }

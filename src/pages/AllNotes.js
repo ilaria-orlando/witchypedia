@@ -1,5 +1,7 @@
 import * as React from 'react';
 import {graphql, Link} from 'gatsby';
+import Layout from "../components/layout"
+import Background from "../components/background";
 
 
 const AllNotes = (props) => {
@@ -9,18 +11,22 @@ const AllNotes = (props) => {
 // TODO link delete note
 // TODO new note
     return(
-        <div className="divStyle">
-            {notes.map(note =>
-                <div className="note">
-                        {/* <img src={note.node.thumbnailUrl} /> */}
-                        <h2>{note.title}</h2>
-                        <p>{note.content}</p>
-                        <h6>{note.date}</h6>
-                        <Link to={'/editNote/'+note.id}>Edit</Link>
-                        <Link to={'/deleteNote/'}>Delete</Link>
+        <Background>
+            <Layout>
+                <div className="divStyle">
+                    {notes.map(note =>
+                        <div className="note">
+                                {/* <img src={note.node.thumbnailUrl} /> */}
+                                <h2>{note.title}</h2>
+                                <p>{note.content}</p>
+                                {/* <h6>{note.date}</h6> */}
+                                <Link to={'/editNote/'+note.id}> <i></i> </Link>
+                                <Link to={'/deleteNote/'}>Delete</Link>
+                        </div>
+                    )}
                 </div>
-            )}
-        </div>
+            </Layout>
+        </Background>
     )
 
 }

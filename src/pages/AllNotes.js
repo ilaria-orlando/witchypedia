@@ -23,46 +23,46 @@ const AllNotes = (props) => {
                         {notes.map(note =>
                             <div className="note">
                                 {/* <img src={note.node.thumbnailUrl} /> */}
-                                <h2>{note.title}</h2>
+                                <h2 className="noteTitle">{note.title}</h2>
                                 <p>{note.content}</p>
                                 {/* <h6>{note.date}</h6> */}
                                 <Link to={'/editNote/'+note.id}> <button type='button'> <img className="grimoireButton" src={editIcon} alt="edit"/></button></Link>
                                 <Link to={'/deleteNote/'}> <button type='button'> <img className="grimoireButton" src={deleteIcon} alt="delete"/></button></Link>
                             </div>
                         )}
-                    </div>
-                    <div className="container m-t-20">
-                        <div className="newnote-page m-t-20">
-                            <form>
-                                <div className="field">
-                                    <div className="control">
-                                        <input
-                                            className="input"
-                                            name="title"
-                                            type="text"
-                                            placeholder="Note Title"
-                                        />
+                        <div className="form">
+                            <div className="newnote-page m-t-20">
+                                <form>
+                                    <div className="field">
+                                        <div className="control">
+                                            <input
+                                                className="input"
+                                                name="title"
+                                                type="text"
+                                                placeholder="Note Title"
+                                            />
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="field">
-                                    <div className="control">
+                                    <div className="field">
+                                        <div className="control">
                                         <textarea
                                             className="textarea"
                                             name="content"
                                             rows="10"
                                             placeholder="Note Content here..."
                                         ></textarea>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="field">
-                                    <div className="control">
-                                        <button className="button is-link"><img className="grimoireButton" src={addIcon} alt="add"/></button>
+                                    <div className="field">
+                                        <div className="control">
+                                            <button className="button is-link"><img className="grimoireButton" src={addIcon} alt="add"/></button>
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
-
                     </div>
+
                 </div>
             </Layout>
         </Background>

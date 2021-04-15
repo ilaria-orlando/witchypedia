@@ -13,12 +13,12 @@ const Money = ({ data: { allContentfulCrystals : data} }) => {
         <Background>
             <Layout>
                 <div className="divStyle">
-                    <div className="crystalPage">
+                    <div className="crystalsPage">
                         <div className="title">
                             <Moneybag className="detailSVG"/>
                             <h2 className="titleH2 purpleColor">Money</h2>
                         </div>
-                        <div className="description green">
+                        <div className="mainText green">
                             <p>Money cannot make you happy, but it does help. Do you want to attract some quick cash? Or need some support in making financial decisions?
                             Sometimes we just need a little help in finding a fulfilling job. This section covers all the crystals to jumpstart you financially. Click and find out!</p>
                         </div>

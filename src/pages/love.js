@@ -13,12 +13,12 @@ const Love = ({ data: { allContentfulCrystals : data} }) => {
         <Background>
             <Layout>
                 <div className="divStyle">
-                    <div className="crystalPage">
+                    <div className="crystalsPage">
                         <div className="title">
                             <Heart className="detailSVG"/>
                             <h2 className="titleH2 purpleColor">Love</h2>
                         </div>
-                        <div className="description green">
+                        <div className="mainText green">
                             <p>Attracting love, loving your self better, improving love in the household... These are all things that can be supported by the crystals in this category.
                                 Any help you need regarding love, friendship and improving your relationships can be found here. Take a look!</p>
                         </div>

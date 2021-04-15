@@ -16,12 +16,12 @@ const AllCrystals = () => {
         <Background>
             <Layout>
                 <div className="divStyle">
-                    <div className="crystalPage">
+                    <div className="crystalsPage">
                         <div className="title">
                             <Crystal className="detailSVG"/>
                             <h2 className="titleH2">Crystals</h2>
                         </div>
-                        <div className="description">
+                        <div className="mainText">
                             <p>So, you need a crystal or stone to enhance a spell? Or you want some support in an area in your life.
                             Here you can find all crystals documented on the site sorted by their associated properties. Click on a tag and
                                 find out which crystal fits your purposes best. Every detail page holds info about the crystal, including most associated

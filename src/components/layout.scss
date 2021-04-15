@@ -163,6 +163,10 @@ body{
   -webkit-box-shadow: $boxShadow;
   -moz-box-shadow: $boxShadow;
   box-shadow: $boxShadow;
+    p {
+        margin: 5px 0px 10px 5px;
+    }
+
 }
 
 .tagLink:hover{

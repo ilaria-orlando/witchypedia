@@ -45,11 +45,6 @@ const IndexPage = () => {
                   Tag="section"
                   fluid={imageData}
               >
-                  <BackgroundImage
-                      className= "mobile"
-                      Tag="section"
-                      fluid={imageDataMobile}
-                      />
                   <Layout>
                     <SEO title="Home" />
                     <div style={{ position: 'relative', height:'80vh'}}>

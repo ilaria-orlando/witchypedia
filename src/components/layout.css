@@ -134,6 +134,21 @@ body {
   font-size: 20px;
 }
 
+.mobileMenu {
+  display: flex;
+  justify-content: flex-start;
+  z-index: 500;
+}
+
+.mobileLogo {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+  height: 50px;
+  width: auto;
+}
+
 .tagLink {
   display: flex;
   justify-content: center;
@@ -233,7 +248,7 @@ body {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  align-items: center;
+  align-content: center;
 }
 
 .note {
@@ -257,6 +272,59 @@ body {
 
 .control {
   margin-top: 15px;
+}
+
+.bm-item {
+  color: #726a95;
+  display: inline-block;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 5px;
+}
+
+.bm-item-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  right: 20px;
+  top: 20px;
+}
+
+.bm-burger-bars {
+  background: #a0d6b4;
+  border-radius: 5px;
+  width: 30px;
+  height: 3px;
+}
+
+.bm-cross-button {
+  width: 30px;
+  height: 30px;
+}
+
+#react-burger-cross-btn {
+  height: 30px;
+  width: 30px;
+}
+
+.bm-menu {
+  background-color: #a0d6b4;
+}
+
+.bm-cross {
+  background-color: #726a95;
+  width: 4px;
+  height: 20px;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=layout.css.map */

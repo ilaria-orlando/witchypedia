@@ -46,6 +46,7 @@
     "graphql": "^15.5.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
+    "react-burger-menu": "^3.0.6",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-sparkle": "^1.0.8",

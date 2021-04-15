@@ -44,7 +44,7 @@ Below you can read about what we used and why.
 Since this is a big project where a lot of research was involved, there are a number of things we still want to add and improve.
 
 #### Main focus
-- [ x ] Mobile friendly menu 
+- [x] Mobile friendly menu 
 - [ ] Mobile friendly landing page
 - [ ] Create a login page
 - [ ] Ability to edit Grimoire entries

@@ -7,8 +7,9 @@ import NavMobile from "./navMobile";
 
 
 const Header = ({ siteTitle }) => {
-    const [width, setWidth] = React.useState(window.innerWidth);
+    const [width, setWidth] = React.useState(1200);
     const breakpoint = 700;
+
 
     React.useEffect(() => {
         const handleWindowResize = () => setWidth(window.innerWidth)

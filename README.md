@@ -1,4 +1,4 @@
-#Witchypedia :crystal_ball:
+#Witchypedia :crystal_ball:#
 
 ####A project by [Ilaria](https://github.com/ilaria-orlando) and [Steph](https://github.com/Steeeeeph)
 

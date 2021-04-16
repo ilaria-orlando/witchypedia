@@ -13,12 +13,12 @@ const Protection = ({ data: { allContentfulCrystals : data} }) => {
         <Background>
             <Layout>
                 <div className="divStyle">
-                    <div className="crystalPage">
+                    <div className="crystalsPage">
                         <div className="title">
                             <Moon className="detailSVG"/>
                             <h2 className="titleH2 purpleColor">Protection</h2>
                         </div>
-                        <div className="description green">
+                        <div className="mainText green">
                             <p>Sometimes you need to protect yourself from the low vibration energy of others. You might find yourself in a hostile environment or you
                             expect yourself to be in a risky situation that can't be avoided. It's important to protect your own flame, some people are just out to get you.
                             This is our collection of crystals for protection.git</p>

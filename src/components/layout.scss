@@ -1,0 +1,350 @@
+$titleFont: "Berkshire Swash";
+$mainFont: 'Dosis', sans-serif;
+$boxShadow: 5px 10px 24px -4px rgba(0,0,0,0.23);
+$brightMint: #a0d6b4;
+$fadedBlue: #719fb0;
+$fadedPurple: #726a95;
+$fadedMint: #a0c1b8;
+$mintHover: #afd5cb;
+
+
+
+body{
+  margin: 0;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.background{
+  background-repeat: repeat;
+  background-size: 350px;
+  opacity: 0.2;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+
+
+.landing {
+  margin: 0 auto;
+  height: 99vh;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  position: fixed;
+}
+
+.divStyle {
+  margin: 0 auto;
+  max-width: 830px;
+  padding: 20px;
+  font-family: $mainFont;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+
+.landingDiv{
+  color: $brightMint;
+  font-family: $mainFont;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 35px 20px 20px 20px;
+}
+
+.landingTitle{
+  font-size: 40px;
+  color: $fadedBlue;
+  font-family: $titleFont;
+  margin-top: 30px;
+}
+.landingSubt{
+  font-size: 25px;
+  color: $fadedBlue;
+  font-family: $titleFont;
+}
+
+.textBox{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.buttonFlex{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.landingText{
+  text-align: right;
+  width: 480px;
+}
+
+.rounded{
+  border-radius: 20px;
+  margin: 0 auto;
+  -webkit-box-shadow: $boxShadow;
+  -moz-box-shadow: $boxShadow;
+  box-shadow: $boxShadow;
+}
+
+.mainText {
+  margin-top: -35px;
+  text-align: center;
+  border-radius: 22px;
+  background-color: $fadedPurple;
+  color: $brightMint;
+  font-size: 20px;
+  padding: 50px 30px 30px 30px;
+  -webkit-box-shadow: $boxShadow;
+  -moz-box-shadow: $boxShadow;
+  box-shadow: $boxShadow;
+  width: inherit;
+}
+
+.crystalSummery{
+  margin-top: 50px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+
+.name{
+  font-size: 50px;
+  font-family: $titleFont;
+  text-align: center;
+  color: $fadedMint;
+  margin-bottom: 30px;
+}
+
+.flexLines{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.centerImage{
+  margin: 0 auto;
+}
+
+.menuFlex{
+  padding-top: 15px;
+}
+
+.menuItem{
+  color: $brightMint;
+  padding-right: 10px;
+  font-weight: bold;
+  font-family: $mainFont;
+  font-size: 20px;
+}
+
+.mobileMenu{
+  display: flex;
+  justify-content: flex-start;
+  z-index: 500;
+}
+
+.mobileLogo{
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+  height: 50px;
+  width: auto;
+}
+
+.tagLink{
+  display: flex;
+  justify-content: center;
+  width: 180px;
+  height: 50px;
+  background-color: $brightMint;
+  border-radius: 20px;
+  padding-top: 3px;
+  margin: 7px;
+  color: $fadedPurple;
+  font-weight: bold;
+  font-size: 20px;
+  -webkit-box-shadow: $boxShadow;
+  -moz-box-shadow: $boxShadow;
+  box-shadow: $boxShadow;
+    p {
+        margin: 5px 0px 10px 5px;
+    }
+
+}
+
+.tagLink:hover{
+  background-color: $mintHover;
+}
+
+.tags {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 25px;
+}
+
+
+
+.title{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 25px 0 0 -35px;
+  font-family: $titleFont;
+}
+
+.titleH2{
+  color: #719fb0;
+  font-size: 50px;
+  margin: 40px 0 0 25px;
+  font-family: $titleFont;
+}
+
+.purple {
+  background-color: #726a95;
+  color: #a0c1b8;
+  width: 240px;
+
+}
+
+.purple:hover{
+  background-color: #968bc5;
+}
+
+.purpleColor{
+  color: #726a95;
+}
+
+.green {
+  background-color: #a0c1b8;
+  color: #726a95;
+}
+
+@media only screen and (max-width: 600px){
+  .titleH2{
+    font-size: 32px;
+    margin: 20px 0 0 15px;
+  }
+
+  .name{
+    font-size: 32px;
+  }
+
+  .detailSVG{
+    width: 150px;
+  }
+
+  .title {
+    justify-content: center;
+    margin: 10px 0 -70px 0;
+  }
+
+
+}
+
+/* Grimoire */
+.grimoireButton {
+  width: auto;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.grimoire{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.note{
+  margin: 20px 10px 10px 10px;
+  text-align: center;
+  width: 85%;
+  border-radius: 22px;
+  background-color: #726a95;
+  color: #a0c1b8;
+  font-size: 24px;
+  padding: 50px 20px 30px 20px;
+  -webkit-box-shadow: 5px 10px 24px -4px rgba(0,0,0,0.23);
+  -moz-box-shadow: 5px 10px 24px -4px rgba(0,0,0,0.23);
+  box-shadow: 5px 10px 24px -4px rgba(0,0,0,0.23);
+}
+
+.noteTitle{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.control {
+  margin-top: 15px;
+}
+
+
+.bm-item{
+  color: $fadedPurple;
+  display: inline-block;
+  font-family: $mainFont;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 5px;
+}
+
+.bm-item-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  right: 20px;
+  top: 20px;
+}
+
+.bm-burger-bars {
+  background: $brightMint;
+  border-radius: 5px;
+  width: 30px;
+  height: 3px;
+}
+
+.bm-cross-button{
+  width: 30px;
+  height: 30px;
+}
+
+#react-burger-cross-btn {
+  height: 30px;
+  width: 30px;
+}
+
+.bm-menu {
+  background-color: $brightMint;
+}
+
+.bm-cross {
+   background-color: $fadedPurple;
+   width: 4px;
+   height: 20px;
+   border-radius: 5px;
+ }

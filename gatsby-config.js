@@ -86,6 +86,7 @@ module.exports = {
         },
         `@chakra-ui/gatsby-plugin`,
         `gatsby-plugin-gatsby-cloud`,
+        `gatsby-plugin-sass`,
         {
             resolve: "gatsby-plugin-react-svg",
             options: {

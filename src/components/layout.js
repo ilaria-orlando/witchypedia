@@ -6,7 +6,7 @@ import "@fontsource/shadows-into-light"
 import "@fontsource/berkshire-swash"
 
 import Header from "./header"
-import "./style.css"
+import "./layout.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

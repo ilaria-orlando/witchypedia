@@ -1,32 +1,35 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
-// import Navbar from './components/Navbar';
 
-import Logo from "../images/svg/witchypedia_logo_green.svg"
-import Right from "../images/svg/line_right.svg"
-import Left from "../images/svg/line_left.svg"
+import NavDesktop from "./navDesktop";
+import NavMobile from "./navMobile";
 
 
-const Header = ({ siteTitle }) => (
-  <header>
-    <div className="menuFlex">
-        <div>
-            <Link to="/">
-                <Logo className="centerImage" />
-            </Link>
-        </div>
-        <div  className="flexLines">
-            <Right />
-            <Link to={"/"}><span className="menuItem">About</span></Link>
-            <Link to={"/crystals"}><span className="menuItem">Crystals</span></Link>
-            <Link to={"/"}><span className="menuItem">Herbs</span></Link>
-            <Link to={"/AllNotes"}><span className="menuItem">Grimoire</span></Link>
-            <Left />
-        </div>
-    </div>
-  </header>
-)
+
+const Header = ({ siteTitle }) => {
+    const [width, setWidth] = React.useState(1200);
+    const breakpoint = 700;
+
+
+    React.useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth)
+        window.addEventListener("resize", handleWindowResize);
+
+        return () => window.removeEventListener("resize", handleWindowResize);
+            }, []);
+
+        const navigation = width < breakpoint ? <NavMobile /> : <NavDesktop />;
+
+
+        return(
+                <header>
+                    { navigation }
+                </header>
+            )
+};
+
+
+
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

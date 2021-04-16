@@ -95,7 +95,10 @@ module.exports = {
             }
         },
         '@apollo/client',
-        'realm-web'
+        'realm-web',
+        'node-fetch',
+        'abort-controller',
+        'isomorphic-fetch'
 
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline

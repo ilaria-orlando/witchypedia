@@ -7,7 +7,14 @@ import NavMobile from "./navMobile";
 
 
 const Header = ({ siteTitle }) => {
-    const [width, setWidth] = React.useState(1200);
+    
+   let windowWidth
+
+    if (typeof window !== `undefined`) {
+        windowWidth = window.innerWidth
+    }
+    
+    const [width, setWidth] = React.useState(windowWidth);
     const breakpoint = 700;
 
 

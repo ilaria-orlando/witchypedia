@@ -148,20 +148,7 @@ body{
   font-size: 20px;
 }
 
-.mobileMenu{
-  display: flex;
-  justify-content: flex-start;
-  z-index: 500;
-}
 
-.mobileLogo{
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  z-index: 1000;
-  height: 50px;
-  width: auto;
-}
 
 .tagLink{
   display: flex;
@@ -295,6 +282,7 @@ body{
   margin-top: 15px;
 }
 
+/* Burger menu styling */
 
 .bm-item{
   color: $fadedPurple;
@@ -314,7 +302,7 @@ body{
 }
 
 .bm-burger-button {
-  position: fixed;
+  position: absolute;
   width: 30px;
   height: 30px;
   right: 20px;
@@ -348,3 +336,13 @@ body{
    height: 20px;
    border-radius: 5px;
  }
+
+
+.mobileLogo{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+  height: 50px;
+  width: auto;
+}

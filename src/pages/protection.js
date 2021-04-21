@@ -21,7 +21,7 @@ const Protection = ({ data: { allContentfulCrystals : data} }) => {
                         <div className="mainText green">
                             <p>Sometimes you need to protect yourself from the low vibration energy of others. You might find yourself in a hostile environment or you
                             expect yourself to be in a risky situation that can't be avoided. It's important to protect your own flame, some people are just out to get you.
-                            This is our collection of crystals for protection.git</p>
+                            This is our collection of crystals for protection.</p>
                         </div>
                     </div>
                     <div className="tags">

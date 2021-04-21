@@ -6,7 +6,7 @@ import NavMobile from "./navMobile";
 
 
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
     
    let windowWidth
 

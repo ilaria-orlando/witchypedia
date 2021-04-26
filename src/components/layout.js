@@ -46,6 +46,10 @@ const Layout = ({ children }) => {
           >
             <main>{children}</main>
           </div>
+        <footer>
+          <div className="whiteFooter" />
+          <p>Witchypedia </p>
+        </footer>
     </>
   )
 }

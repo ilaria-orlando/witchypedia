@@ -7,7 +7,13 @@ import { StaticImage } from "gatsby-plugin-image"
 import Sparkle from 'react-sparkle'
 import Typewriter from 'typewriter-effect';
 import Background from "../components/background";
+
 import Gem from "../images/svg/gem.svg";
+import Eye from "../images/svg/eye_small.svg"
+import Moon from "../images/svg/moon_small.svg"
+import Heart from "../images/svg/heart_small.svg"
+import Money from  "../images/svg/money_small.svg"
+import Love from "./love";
 
 
 
@@ -48,23 +54,36 @@ const IndexPage = () => {
                                     </div>
                                 </div>
                             <div className="textBox">
+                                <h3>Anything you need to spice up your spells and harness your power!</h3>
                                 <p className="landingText">
                                     Here you can find all the useful information about crystals and herbs (coming soon!), handily organised by category.
                                     You can even create you own online grimoire so you never lose your notes again.
                                 </p>
+                                <div className="iconsLanding">
+                                    <Moon />
+                                    <Eye />
+                                    <Money />
+                                    <Heart />
+                                </div>
                                 <div className="landingCards">
-                                    <div className="card">
-                                        <StaticImage src="../images/crystals.jpg" alt="crystals" className="cardImage" />
-                                        <p>Check out which crystal you need for support and spells here!</p>
-                                    </div>
-                                    <div className="card">
-                                        <StaticImage src="../images/herbs.jpg" alt="herbs" className="cardImage" />
-                                        <p>Check out which crystal you need for support and spells here!</p>
-                                    </div>
-                                    <div className="card">
-                                        <StaticImage src="../images/grimoire.jpg" alt="grimoire" className="cardImage" />
-                                        <p>Check out which crystal you need for support and spells here!</p>
-                                    </div>
+                                    <Link to={"/crystals"}>
+                                        <div className="card">
+                                            <StaticImage src="../images/crystals.jpg" alt="crystals" className="cardImage" />
+                                            <p>Check out all the info on crystals here!</p>
+                                        </div>
+                                    </Link>
+                                    <Link to={"/"}>
+                                        <div className="card">
+                                            <StaticImage src="../images/herbs.jpg" alt="herbs" className="cardImage" />
+                                            <p>Take a look at all the gathered information on herbs here!</p>
+                                        </div>
+                                    </Link>
+                                    <Link to={"/grimoire"}>
+                                        <div className="card">
+                                            <StaticImage src="../images/grimoire.jpg" alt="grimoire" className="cardImage" />
+                                            <p>Make your own online Grimoire of spells here!</p>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

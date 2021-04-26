@@ -2,6 +2,7 @@ $titleFont: "Berkshire Swash";
 $mainFont: 'Dosis', sans-serif;
 $boxShadow: 5px 10px 24px -4px rgba(0,0,0,0.23);
 $boxShadowHeader: 5px 10px 24px -4px rgba(0,0,0,0.1);
+$boxShadowFooter: -5px -10px 24px -4px rgba(0,0,0,0.1);
 $borderRadius: 20px;
 $brightMint: #a0d6b4;
 $fadedBlue: #719fb0;
@@ -89,7 +90,6 @@ body{
   left: 0px;
   z-index: -100;
   box-shadow: $boxShadowHeader;
-  border-radius: $borderRadius;
 }
 
 .textBox{
@@ -103,6 +103,12 @@ body{
   margin: 40px 20px 20px 30px;
   padding: 30px;
   box-shadow: $boxShadow;
+  h3{
+    font-family: $titleFont;
+    color: $fadedBlue;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
 }
 
 
@@ -116,6 +122,8 @@ body{
 .landingCards{
   display: flex;
   justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .card{
@@ -125,6 +133,15 @@ body{
   color: $fadedPurple;
   margin: 15px;
   box-shadow: $boxShadow;
+  p {
+    padding: 5px 8px 8px 8px;
+    text-align: center;
+  }
+}
+
+.iconsLanding{
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .cardImage{
@@ -321,6 +338,17 @@ body{
     margin-bottom: 50px;
   }
 
+  .landingCards{
+    flex-direction: column;
+  }
+
+  .landingText{
+    width: auto;
+  }
+
+  .textBox{
+    margin: 40px 5px 5px 5px;
+  }
 
 }
 
@@ -429,4 +457,22 @@ body{
 
 .menu-item:hover{
   color: $purpleHover;
+}
+
+footer{
+  margin-top: 40px;
+  text-align: center;
+  padding-bottom: 10px;
+  color: $brightMint;
+}
+
+.whiteFooter{
+  width: 100vw;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  bottom:0px;
+  left: 0px;
+  z-index: -100;
+  box-shadow: $boxShadowFooter;
 }

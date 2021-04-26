@@ -1,11 +1,13 @@
 $titleFont: "Berkshire Swash";
 $mainFont: 'Dosis', sans-serif;
 $boxShadow: 5px 10px 24px -4px rgba(0,0,0,0.23);
+$boxShadowHeader: 5px 10px 24px -4px rgba(0,0,0,0.1);
 $brightMint: #a0d6b4;
 $fadedBlue: #719fb0;
 $fadedPurple: #726a95;
 $fadedMint: #a0c1b8;
 $mintHover: #afd5cb;
+$purpleHover: #968bc5;
 
 
 
@@ -18,7 +20,7 @@ body{
 .background{
   background-repeat: repeat;
   background-size: 350px;
-  opacity: 0.2;
+  opacity: 0.05;
   background-attachment: fixed;
   min-height: 100vh;
 }
@@ -50,20 +52,42 @@ body{
   color: $brightMint;
   font-family: $mainFont;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1200px;
   padding: 35px 20px 20px 20px;
 }
 
 .landingTitle{
   font-size: 40px;
-  color: $fadedBlue;
+  color: $brightMint;
   font-family: $titleFont;
-  margin-top: 30px;
+  margin: 40px 0 20px 0;
 }
 .landingSubt{
   font-size: 25px;
   color: $fadedBlue;
-  font-family: $titleFont;
+  font-family: $mainFont;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.welcome{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 35px;
+}
+
+.whiteBanner{
+  width: 100vw;
+  height: 110px;
+  background-color: white;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  z-index: -100;
+  box-shadow: $boxShadowHeader;
 }
 
 .textBox{
@@ -72,10 +96,6 @@ body{
   margin-top: 30px;
 }
 
-.buttonFlex{
-  display: flex;
-  justify-content: flex-end;
-}
 
 .landingText{
   text-align: right;
@@ -148,7 +168,9 @@ body{
   font-size: 20px;
 }
 
-
+.menuItem:hover{
+  color: $mintHover;
+}
 
 .tagLink{
   display: flex;
@@ -175,6 +197,8 @@ body{
   background-color: $mintHover;
 }
 
+
+
 .tags {
   display: flex;
   flex-flow: row wrap;
@@ -191,38 +215,38 @@ body{
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  margin: 25px 0 0 -35px;
+  margin: 80px 0 0 -35px;
   font-family: $titleFont;
 }
 
 .titleH2{
-  color: #719fb0;
+  color: $fadedBlue;
   font-size: 50px;
   margin: 40px 0 0 25px;
   font-family: $titleFont;
 }
 
 .purple {
-  background-color: #726a95;
-  color: #a0c1b8;
+  background-color: $fadedPurple;
+  color: $fadedMint;
   width: 240px;
 
 }
 
 .purple:hover{
-  background-color: #968bc5;
+  background-color: $purpleHover;
 }
 
 .purpleColor{
-  color: #726a95;
+  color: $fadedPurple;
 }
 
 .green {
-  background-color: #a0c1b8;
-  color: #726a95;
+  background-color: $fadedMint;
+  color: $fadedPurple;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
   .titleH2{
     font-size: 32px;
     margin: 20px 0 0 15px;
@@ -233,12 +257,37 @@ body{
   }
 
   .detailSVG{
-    width: 150px;
+    width: 135px;
   }
 
   .title {
     justify-content: center;
-    margin: 10px 0 -70px 0;
+    margin: 30px 0 -80px 0;
+  }
+
+  .welcome{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 30px 5px 10px 5px;
+  }
+
+
+  .landingTitle{
+    font-size: 35px;
+  }
+
+  .landingSubt{
+    font-size: 20px;
+  }
+
+  .whiteBanner{
+    height: 70px;
+  }
+
+  .indexButton{
+    margin-bottom: 50px;
   }
 
 
@@ -345,4 +394,8 @@ body{
   z-index: 1000;
   height: 50px;
   width: auto;
+}
+
+.menu-item:hover{
+  color: $purpleHover;
 }

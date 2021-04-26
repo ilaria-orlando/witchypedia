@@ -30,6 +30,7 @@ const Header = () => {
 
         return(
                 <header>
+                    <div className="whiteBanner" />
                     { navigation }
                 </header>
             )

@@ -29,11 +29,11 @@ const AllCrystals = () => {
                         </div>
                     </div>
                     <div className="tags">
-                        <Link to={"/protection/"}><div className="tagLink"><Moon /><p>Protection</p> </div></Link>
-                        <Link to={"/money/"}><div className="tagLink"><Money /><p>Money </p></div></Link>
-                        <Link to={"/clarity/"}><div className="tagLink"><Eye /><p>Clarity</p> </div></Link>
-                        <Link to={"/love/"}><div className="tagLink"> <Heart /><p>Love</p> </div></Link>
-                        <Link to={"/"}><div className="tagLink"><Gem /><p>All</p> </div></Link>
+                        <Link to={"/protection/"}><button className="tagLink"><Moon /><p>Protection</p> </button></Link>
+                        <Link to={"/money/"}><button className="tagLink"><Money /><p>Money </p></button></Link>
+                        <Link to={"/clarity/"}><button className="tagLink"><Eye /><p>Clarity</p> </button></Link>
+                        <Link to={"/love/"}><button className="tagLink"> <Heart /><p>Love</p> </button></Link>
+                        <Link to={"/"}><button className="tagLink"><Gem /><p>All</p> </button></Link>
                     </div>
 
                 </div>

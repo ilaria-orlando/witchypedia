@@ -27,7 +27,7 @@ const Love = ({ data: { allContentfulCrystals : data} }) => {
                         {data.edges.map(({ node }) => {
                             return (
                                 <div key={node.slug}>
-                                    <Link to={`/crystals/${node.slug}`}><div className="tagLink purple"><Gem /><p>{node.name}</p></div></Link>
+                                    <Link to={`/crystals/${node.slug}`}><button className="tagLink purple"><Gem /><p>{node.name}</p></button></Link>
                                 </div>
                             )
                         })}

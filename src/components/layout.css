@@ -7,7 +7,7 @@ body {
 .background {
   background-repeat: repeat;
   background-size: 350px;
-  opacity: 0.2;
+  opacity: 0.05;
   background-attachment: fixed;
   min-height: 100vh;
 }
@@ -36,32 +36,49 @@ body {
   color: #a0d6b4;
   font-family: "Dosis", sans-serif;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1200px;
   padding: 35px 20px 20px 20px;
 }
 
 .landingTitle {
   font-size: 40px;
-  color: #719fb0;
+  color: #a0d6b4;
   font-family: "Berkshire Swash";
-  margin-top: 30px;
+  margin: 40px 0 20px 0;
 }
 
 .landingSubt {
   font-size: 25px;
   color: #719fb0;
-  font-family: "Berkshire Swash";
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 35px;
+}
+
+.whiteBanner {
+  width: 100vw;
+  height: 110px;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -100;
+  box-shadow: 5px 10px 24px -4px rgba(0, 0, 0, 0.1);
 }
 
 .textBox {
   display: flex;
   justify-content: flex-end;
   margin-top: 30px;
-}
-
-.buttonFlex {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .landingText {
@@ -134,6 +151,10 @@ body {
   font-size: 20px;
 }
 
+.menuItem:hover {
+  color: #afd5cb;
+}
+
 .tagLink {
   display: flex;
   justify-content: center;
@@ -172,7 +193,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  margin: 25px 0 0 -35px;
+  margin: 80px 0 0 -35px;
   font-family: "Berkshire Swash";
 }
 
@@ -202,7 +223,7 @@ body {
   color: #726a95;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .titleH2 {
     font-size: 32px;
     margin: 20px 0 0 15px;
@@ -213,12 +234,36 @@ body {
   }
 
   .detailSVG {
-    width: 150px;
+    width: 135px;
   }
 
   .title {
     justify-content: center;
-    margin: 10px 0 -70px 0;
+    margin: 30px 0 -80px 0;
+  }
+
+  .welcome {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 30px 5px 10px 5px;
+  }
+
+  .landingTitle {
+    font-size: 35px;
+  }
+
+  .landingSubt {
+    font-size: 20px;
+  }
+
+  .whiteBanner {
+    height: 70px;
+  }
+
+  .indexButton {
+    margin-bottom: 50px;
   }
 }
 /* Grimoire */
@@ -320,6 +365,10 @@ body {
   z-index: 1000;
   height: 50px;
   width: auto;
+}
+
+.menu-item:hover {
+  color: #968bc5;
 }
 
 /*# sourceMappingURL=layout.css.map */

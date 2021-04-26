@@ -61,7 +61,7 @@ body {
   align-content: center;
   align-items: flex-start;
   justify-content: center;
-  margin: 35px;
+  margin: 35px 35px -100px 35px;
 }
 
 .whiteBanner {
@@ -83,8 +83,8 @@ body {
   align-items: center;
   background-color: #a0d6b4;
   border-radius: 20px;
-  margin: 40px 20px 20px 30px;
-  padding: 30px;
+  margin: 0 20px 20px 30px;
+  padding: 50px 30px 30px 30px;
   box-shadow: 5px 10px 24px -4px rgba(0, 0, 0, 0.23);
 }
 .textBox h3 {
@@ -92,12 +92,14 @@ body {
   color: #719fb0;
   margin-bottom: 20px;
   font-size: 25px;
+  text-align: left;
+  width: 90%;
 }
 
 .landingText {
-  text-align: center;
-  width: 480px;
+  text-align: left;
   color: #726a95;
+  width: 90%;
   margin-bottom: 30px;
 }
 
@@ -106,13 +108,18 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
+}
+
+.landingImage {
+  margin-right: -150px;
 }
 
 .card {
   width: 300px;
   border-radius: 20px;
-  background-color: #719fb0;
-  color: #726a95;
+  background-color: #726a95;
+  color: #a0d6b4;
   margin: 15px;
   box-shadow: 5px 10px 24px -4px rgba(0, 0, 0, 0.23);
 }
@@ -121,9 +128,22 @@ body {
   text-align: center;
 }
 
+.card:hover {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  background-color: #968bc5;
+}
+
+button:hover {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
 .iconsLanding {
   display: flex;
-  margin-bottom: 20px;
+  margin: 30px;
 }
 
 .cardImage {
@@ -269,7 +289,17 @@ body {
   color: #726a95;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 950px) {
+  .landingImage {
+    margin-right: 0;
+  }
+
+  .welcome {
+    margin: 35px 35px -50px 35px;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 699px) {
   .titleH2 {
     font-size: 32px;
     margin: 20px 0 0 15px;

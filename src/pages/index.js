@@ -54,10 +54,11 @@ const IndexPage = () => {
                                     </div>
                                 </div>
                             <div className="textBox">
-                                <h3>Anything you need to spice up your spells and harness your power!</h3>
+                                <h3>Anything you need to harness your power!</h3>
                                 <p className="landingText">
-                                    Here you can find all the useful information about crystals and herbs (coming soon!), handily organised by category.
-                                    You can even create you own online grimoire so you never lose your notes again.
+                                    Here you can find all the useful information about crystals and herbs (coming soon!),<br />
+                                    handily organised by category. You can even create you own online grimoire<br />
+                                    so you never lose your notes again.
                                 </p>
                                 <div className="iconsLanding">
                                     <Moon />

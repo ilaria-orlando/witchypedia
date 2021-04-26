@@ -52,6 +52,20 @@ const IndexPage = () => {
                                     Here you can find all the useful information about crystals and herbs (coming soon!), handily organised by category.
                                     You can even create you own online grimoire so you never lose your notes again.
                                 </p>
+                                <div className="landingCards">
+                                    <div className="card">
+                                        <StaticImage src="../images/crystals.jpg" alt="crystals" className="cardImage" />
+                                        <p>Check out which crystal you need for support and spells here!</p>
+                                    </div>
+                                    <div className="card">
+                                        <StaticImage src="../images/herbs.jpg" alt="herbs" className="cardImage" />
+                                        <p>Check out which crystal you need for support and spells here!</p>
+                                    </div>
+                                    <div className="card">
+                                        <StaticImage src="../images/grimoire.jpg" alt="grimoire" className="cardImage" />
+                                        <p>Check out which crystal you need for support and spells here!</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                   </Layout>

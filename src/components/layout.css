@@ -201,6 +201,12 @@ button:hover {
   justify-content: center;
 }
 
+.backButton {
+  position: absolute;
+  top: 140px;
+  left: 40px;
+}
+
 .centerImage {
   margin: 0 auto;
 }
@@ -301,12 +307,26 @@ button:hover {
 }
 @media only screen and (max-width: 699px) {
   .titleH2 {
-    font-size: 32px;
+    font-size: 36px;
     margin: 20px 0 0 15px;
   }
 
   .name {
-    font-size: 32px;
+    font-size: 36px;
+    margin-top: 45px;
+  }
+
+  .mainText {
+    margin-bottom: 50px;
+  }
+
+  .backButton {
+    position: absolute;
+    margin: 0 auto;
+    top: auto;
+    bottom: 80px;
+    right: 0;
+    left: 0;
   }
 
   .detailSVG {

@@ -1,8 +1,10 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, navigate } from 'gatsby'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Background from "../components/background";
+
+import Gem from "../images/svg/gem.svg";
 
 
 const Crystal = ({ data: { contentfulCrystals : data} }) => {
@@ -14,6 +16,7 @@ const Crystal = ({ data: { contentfulCrystals : data} }) => {
         <Background>
             <Layout>
                 <div className="divStyle">
+                    <button onClick={() => { navigate(-1) }} className="tagLink backButton"><Gem /> Go back</button>
                     <div className="crystalSummery">
                         <h2 className="name">{data.name}</h2>
                         <GatsbyImage className="rounded"

@@ -13,7 +13,7 @@ import Eye from "../images/svg/eye_small.svg"
 import Moon from "../images/svg/moon_small.svg"
 import Heart from "../images/svg/heart_small.svg"
 import Money from  "../images/svg/money_small.svg"
-import Love from "./love";
+
 
 
 
@@ -79,7 +79,7 @@ const IndexPage = () => {
                                             <p>Take a look at all the gathered information on herbs here!</p>
                                         </div>
                                     </Link>
-                                    <Link to={"/grimoire"}>
+                                    <Link to={"/"}>
                                         <div className="card">
                                             <StaticImage src="../images/grimoire.jpg" alt="grimoire" className="cardImage" />
                                             <p>Make your own online Grimoire of spells here!</p>

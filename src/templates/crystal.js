@@ -25,6 +25,7 @@ const Crystal = ({ data: { contentfulCrystals : data} }) => {
                         <div className="mainText">
                             <h3>What about {data.name}</h3>
                             <p>{text}</p>
+                            <br />
                             <h3>How to care for {data.name}</h3>
                             <p>Fusce nibh libero, congue eget molestie eu, convallis at quam. Nam mauris lacus, efficitur et lectus quis, venenatis dictum risus.
                                 Integer nec laoreet quam. Aenean ac felis quis risus fringilla condimentum et a turpis. Cras vitae urna a turpis aliquam semper.

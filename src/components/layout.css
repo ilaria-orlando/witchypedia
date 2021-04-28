@@ -320,6 +320,10 @@ button:hover {
     margin: 20px 0 0 15px;
   }
 
+  header {
+    position: fixed;
+  }
+
   .name {
     font-size: 36px;
     margin-top: 45px;
@@ -440,7 +444,7 @@ button:hover {
 }
 
 .bm-burger-button {
-  position: absolute;
+  position: fixed;
   width: 30px;
   height: 30px;
   right: 20px;
@@ -489,7 +493,7 @@ button:hover {
 }
 
 footer {
-  margin-top: 40px;
+  margin-top: 50px;
   text-align: center;
   padding-bottom: 10px;
   color: #a0d6b4;

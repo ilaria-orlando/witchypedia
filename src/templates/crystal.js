@@ -16,14 +16,19 @@ const Crystal = ({ data: { contentfulCrystals : data} }) => {
         <Background>
             <Layout>
                 <div className="divStyle">
-                    <button onClick={() => { navigate(-1) }} className="tagLink backButton"><Gem /> Go back</button>
+                    <button onClick={() => { navigate(-1) }} className="tagLink backButton"><Gem /> <span>Go back</span></button>
                     <div className="crystalSummery">
                         <h2 className="name">{data.name}</h2>
                         <GatsbyImage className="rounded"
                                      image={image} alt={data.name}
                         />
                         <div className="mainText">
+                            <h3>What about {data.name}</h3>
                             <p>{text}</p>
+                            <h3>How to care for {data.name}</h3>
+                            <p>Fusce nibh libero, congue eget molestie eu, convallis at quam. Nam mauris lacus, efficitur et lectus quis, venenatis dictum risus.
+                                Integer nec laoreet quam. Aenean ac felis quis risus fringilla condimentum et a turpis. Cras vitae urna a turpis aliquam semper.
+                                Morbi sed nisl tincidunt, mattis sapien id, luctus felis. Cras posuere sapien et eros elementum, sed egestas dui condimentum.</p>
                             <p>Associated chakra:<span className="bold">{data.chakra}</span></p>
                             <p>Associated zodiac: <span className="bold">{data.zodiac}</span></p>
                         </div>

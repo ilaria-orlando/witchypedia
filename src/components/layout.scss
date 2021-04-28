@@ -16,7 +16,7 @@ $purpleHover: #968bc5;
 body{
   margin: 0;
   background-color: transparent;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .background{
@@ -39,7 +39,7 @@ body{
 
 .divStyle {
   margin: 0 auto;
-  max-width: 830px;
+  max-width: 900px;
   padding: 20px;
   font-family: $mainFont;
   display: flex;
@@ -192,6 +192,15 @@ button:hover{
   -moz-box-shadow: $boxShadow;
   box-shadow: $boxShadow;
   width: inherit;
+  h3{
+    font-weight: bold;
+    color: $fadedBlue;
+    font-size: 25px;
+    margin: 20px 0 10px 0
+  }
+  p{
+    margin-bottom: 20px;
+  }
 }
 
 .crystalSummery{

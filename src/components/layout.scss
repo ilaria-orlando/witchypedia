@@ -254,7 +254,10 @@ button:hover{
 }
 
 .menuItem:hover{
-  color: $mintHover;
+  color: $fadedBlue;
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .tagLink{
@@ -334,6 +337,7 @@ button:hover{
 @media only screen and (max-width: 950px){
   .landingImage{
     margin-right: 0;
+    margin-bottom: -15px;
   }
 
   .welcome{
@@ -350,6 +354,7 @@ button:hover{
 
   header{
     position: fixed;
+    z-index: 1000;
   }
 
   .name{
@@ -396,6 +401,10 @@ button:hover{
     font-size: 20px;
   }
 
+  .landingImage{
+    margin-bottom: -90px;
+  }
+
   .whiteBanner{
     height: 70px;
   }
@@ -413,7 +422,7 @@ button:hover{
   }
 
   .textBox{
-    margin: 40px 5px 5px 5px;
+    margin: 40px 5px 50px 5px;
   }
 
 }
@@ -523,6 +532,9 @@ button:hover{
 
 .menu-item:hover{
   color: $purpleHover;
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 footer{

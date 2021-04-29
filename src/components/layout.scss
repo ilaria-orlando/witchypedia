@@ -100,7 +100,7 @@ body{
   align-items: center;
   background-color: $brightMint;
   border-radius: $borderRadius;
-  margin: 0 20px 45px 30px;
+  margin: 0 20px 30px 0;
   padding: 50px 30px 30px 30px;
   box-shadow: $boxShadow;
   h3{
@@ -204,7 +204,7 @@ button:hover{
 }
 
 .crystalSummery{
-  margin-top: 50px;
+  margin: 50px 0 45px 0;
   display: flex;
   flex-flow: column;
   justify-content: center;

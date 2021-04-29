@@ -83,7 +83,7 @@ body {
   align-items: center;
   background-color: #a0d6b4;
   border-radius: 20px;
-  margin: 0 20px 45px 30px;
+  margin: 0 20px 30px 0;
   padding: 50px 30px 30px 30px;
   box-shadow: 5px 10px 24px -4px rgba(0, 0, 0, 0.23);
 }
@@ -183,7 +183,7 @@ button:hover {
 }
 
 .crystalSummery {
-  margin-top: 50px;
+  margin: 50px 0 45px 0;
   display: flex;
   flex-flow: column;
   justify-content: center;

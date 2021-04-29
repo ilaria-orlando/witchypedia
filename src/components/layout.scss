@@ -59,13 +59,13 @@ body{
 }
 
 .landingTitle{
-  font-size: 40px;
+  font-size: 44px;
   color: $brightMint;
   font-family: $titleFont;
   margin: 40px 0 20px 0;
 }
 .landingSubt{
-  font-size: 25px;
+  font-size: 28px;
   color: $fadedBlue;
   font-family: $mainFont;
   font-weight: bold;
@@ -100,14 +100,14 @@ body{
   align-items: center;
   background-color: $brightMint;
   border-radius: $borderRadius;
-  margin: 0 20px 20px 30px;
+  margin: 0 20px 45px 30px;
   padding: 50px 30px 30px 30px;
   box-shadow: $boxShadow;
   h3{
     font-family: $titleFont;
     color: $fadedBlue;
     margin-bottom: 20px;
-    font-size: 25px;
+    font-size: 28px;
     text-align: left;
     width: 90%;
   }

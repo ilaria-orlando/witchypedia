@@ -41,14 +41,14 @@ body {
 }
 
 .landingTitle {
-  font-size: 40px;
+  font-size: 44px;
   color: #a0d6b4;
   font-family: "Berkshire Swash";
   margin: 40px 0 20px 0;
 }
 
 .landingSubt {
-  font-size: 25px;
+  font-size: 28px;
   color: #719fb0;
   font-family: "Dosis", sans-serif;
   font-weight: bold;
@@ -83,7 +83,7 @@ body {
   align-items: center;
   background-color: #a0d6b4;
   border-radius: 20px;
-  margin: 0 20px 20px 30px;
+  margin: 0 20px 45px 30px;
   padding: 50px 30px 30px 30px;
   box-shadow: 5px 10px 24px -4px rgba(0, 0, 0, 0.23);
 }
@@ -91,7 +91,7 @@ body {
   font-family: "Berkshire Swash";
   color: #719fb0;
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 28px;
   text-align: left;
   width: 90%;
 }

@@ -1,7 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {graphql, Link, useStaticQuery} from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Sparkle from 'react-sparkle'

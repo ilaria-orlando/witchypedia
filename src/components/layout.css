@@ -22,7 +22,7 @@ body {
 
 .divStyle {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 950px;
   padding: 20px;
   font-family: "Dosis", sans-serif;
   display: flex;
@@ -41,14 +41,14 @@ body {
 }
 
 .landingTitle {
-  font-size: 44px;
+  font-size: 46px;
   color: #a0d6b4;
   font-family: "Berkshire Swash";
   margin: 40px 0 20px 0;
 }
 
 .landingSubt {
-  font-size: 28px;
+  font-size: 30px;
   color: #719fb0;
   font-family: "Dosis", sans-serif;
   font-weight: bold;
@@ -91,7 +91,7 @@ body {
   font-family: "Berkshire Swash";
   color: #719fb0;
   margin-bottom: 20px;
-  font-size: 28px;
+  font-size: 30px;
   text-align: left;
   width: 90%;
 }
@@ -100,7 +100,7 @@ body {
   text-align: left;
   color: #726a95;
   width: 90%;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .landingCards {
@@ -161,12 +161,11 @@ button:hover {
 }
 
 .mainText {
-  margin-top: -35px;
+  margin: -35px 0 40px 0;
   text-align: center;
   border-radius: 20px;
   background-color: #726a95;
   color: #a0d6b4;
-  font-size: 20px;
   padding: 50px 30px 30px 30px;
   -webkit-box-shadow: 5px 10px 24px -4px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 5px 10px 24px -4px rgba(0, 0, 0, 0.23);
@@ -176,7 +175,7 @@ button:hover {
 .mainText h3 {
   font-weight: bold;
   color: #719fb0;
-  font-size: 25px;
+  font-size: 28px;
   margin: 20px 0 10px 0;
 }
 .mainText p {

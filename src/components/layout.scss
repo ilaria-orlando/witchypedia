@@ -39,7 +39,7 @@ body{
 
 .divStyle {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 950px;
   padding: 20px;
   font-family: $mainFont;
   display: flex;
@@ -59,13 +59,13 @@ body{
 }
 
 .landingTitle{
-  font-size: 44px;
+  font-size: 46px;
   color: $brightMint;
   font-family: $titleFont;
   margin: 40px 0 20px 0;
 }
 .landingSubt{
-  font-size: 28px;
+  font-size: 30px;
   color: $fadedBlue;
   font-family: $mainFont;
   font-weight: bold;
@@ -107,7 +107,7 @@ body{
     font-family: $titleFont;
     color: $fadedBlue;
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 30px;
     text-align: left;
     width: 90%;
   }
@@ -118,7 +118,7 @@ body{
   text-align: left;
   color: $fadedPurple;
   width: 90%;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .landingCards{
@@ -181,12 +181,11 @@ button:hover{
 
 
 .mainText {
-  margin-top: -35px;
+  margin: -35px 0 40px 0;
   text-align: center;
   border-radius: $borderRadius;
   background-color: $fadedPurple;
   color: $brightMint;
-  font-size: 20px;
   padding: 50px 30px 30px 30px;
   -webkit-box-shadow: $boxShadow;
   -moz-box-shadow: $boxShadow;
@@ -195,11 +194,12 @@ button:hover{
   h3{
     font-weight: bold;
     color: $fadedBlue;
-    font-size: 25px;
+    font-size: 28px;
     margin: 20px 0 10px 0
   }
   p{
     margin-bottom: 20px;
+
   }
 }
 
